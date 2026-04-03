@@ -116,4 +116,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  transition: background-color 0.3s ease;
 }

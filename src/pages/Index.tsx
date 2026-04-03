@@ -12,13 +12,34 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
       <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <EducationSection />
-      <ContactSection />
+
+      {/* Each ID here must match the 'id' in the navLinks array */}
+      <section id="about">
+        <AboutSection />
+      </section>
+
+      <section id="skills">
+        <SkillsSection />
+      </section>
+
+      <section id="projects">
+        <ProjectsSection />
+      </section>
+
+      <section id="experience">
+        <ExperienceSection />
+      </section>
+
+      <section id="education">
+        <EducationSection />
+      </section>
+
+      <section id="contact">
+        <ContactSection />
+      </section>
+
       <Footer />
     </div>
   );
