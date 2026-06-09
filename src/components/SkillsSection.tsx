@@ -8,29 +8,24 @@ const skillCategories: { title: string; icon: LucideIcon; skills: string[] }[] =
     skills: ["Java", "JavaScript"],
   },
   {
-    title: "Backend",
+    title: "Backend / Frameworks",
     icon: Server,
-    skills: ["Spring Boot", "Spring Security", "REST APIs", "JWT", "JPA/Hibernate"],
+    skills: ["Spring Boot", "Microservices Architecture", "RESTful API Development"],
   },
   {
     title: "Database",
     icon: Database,
-    skills: ["PostgreSQL", "MySQL"],
+    skills: ["MySQL", "PostgreSQL", "Google Cloud Spanner"],
   },
   {
-    title: "Tools",
+    title: "Tools & DevOps",
     icon: Wrench,
-    skills: ["Git", "GitHub", "Postman", "Maven"],
+    skills: ["Git", "GitHub", "Jenkins (CI/CD)", "Bruno (API Testing)", "Google Cloud Platform (GCP)", "Google Cloud Console"],
   },
   {
     title: "Concepts",
     icon: Shield,
-    skills: ["API Security", "RBAC", "Exception Handling", "Database Design"],
-  },
-  {
-    title: "Learning",
-    icon: Sparkles,
-    skills: ["ES6+", "Async/Await", "DOM", "Frontend Integration"],
+    skills: ["Agile / Scrum", "CI/CD Pipeline", "Microservices"],
   },
 ];
 

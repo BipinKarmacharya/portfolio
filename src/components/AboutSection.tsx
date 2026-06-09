@@ -7,9 +7,9 @@ const highlights = [
 ];
 
 const stats = [
-  { value: "15+", label: "REST APIs Built" },
-  { value: "50+", label: "Students Trained" },
-  { value: "3+", label: "Projects Completed" },
+  { value: "15+", label: "GitHub Repos" },
+  { value: "5+", label: "Projects" },
+  { value: "1+", label: "Experience" },
 ];
 
 const AboutSection = () => {
@@ -27,11 +27,10 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              I'm a Computer Engineering graduate from Lumbini Engineering College
-              (Pokhara University) with a strong passion for backend development. I
-              specialize in building robust, scalable applications using Java and
-              Spring Boot. I'm currently expanding my skills in JavaScript and
-              frontend integration, eager to grow as a full-stack Software Engineer.
+              I'm a Computer Engineering graduate from Pokhara University. Currently working as a
+              Java & Spring Boot Developer Intern at Oncore Software Solutions (outsourcing partner
+              of Equifax). I specialize in building microservices, RESTful APIs, and backend systems.
+              Passionate about clean architecture and eager to grow as a backend engineer.
             </p>
           </div>
 

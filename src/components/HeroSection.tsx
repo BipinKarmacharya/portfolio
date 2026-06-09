@@ -1,11 +1,12 @@
-import { Github, Linkedin, Mail, ChevronDown, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown, Terminal, Download } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const roles = [
+  "Java Developer",
   "Backend Developer",
-  "Software Engineer",
   "Spring Boot Expert",
   "API Architect",
+  "Software Engineer",
 ];
 
 const HeroSection = () => {
@@ -96,14 +97,22 @@ const HeroSection = () => {
             className="text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-up"
             style={{ animationDelay: "0.5s" }}
           >
-            Computer Engineering graduate skilled in Java, Spring Boot & REST APIs.
-            Passionate about building scalable, secure backend systems.
+            Computer Engineering graduate from Pokhara University. Java & Spring Boot Developer Intern at Oncore Software Solutions.
+            Specializing in microservices, RESTful APIs, and backend systems. Passionate about clean architecture.
           </p>
 
           <div
-            className="flex items-center justify-center gap-4 opacity-0 animate-fade-up"
+            className="flex items-center justify-center gap-4 opacity-0 animate-fade-up flex-wrap"
             style={{ animationDelay: "0.65s" }}
           >
+            <a
+              href="/resume.pdf"
+              download="Bipin_Karmacharya_Resume.pdf"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary/10 text-primary border border-primary/30 font-semibold hover:bg-primary/20 transition-all glow-shadow hover:scale-[1.02]"
+            >
+              <Download size={18} />
+              Download Resume
+            </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-all glow-shadow hover:scale-[1.02]"
@@ -120,7 +129,7 @@ const HeroSection = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/bipin-karmacharya"
+              href="https://www.linkedin.com/in/bipin-karmacharya/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-12 h-12 rounded-xl border border-border bg-card hover:border-primary/50 hover:scale-105 transition-all"

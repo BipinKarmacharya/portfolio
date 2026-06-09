@@ -61,6 +61,12 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', system-ui, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   ::selection {
@@ -93,6 +99,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -100,24 +107,44 @@
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px -5px hsl(174 72% 50% / 0.2); }
-  50% { box-shadow: 0 0 30px -3px hsl(174 72% 50% / 0.4); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px -5px hsl(174 72% 50% / 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 30px -3px hsl(174 72% 50% / 0.4);
+  }
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
 body {
   transition: background-color 0.3s ease;
 }

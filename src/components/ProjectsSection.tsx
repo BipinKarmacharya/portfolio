@@ -10,6 +10,15 @@ const projects = [
     featured: true,
   },
   {
+    title: "Microservice Backend System",
+    description:
+      "Built a microservice-based backend system handling authentication, transaction ID construction, JSON-to-GraphQL transformation, and integration with internal services.",
+    tags: ["Java", "Spring Boot", "Google Cloud Spanner", "Jenkins", "GitHub"],
+    github: "",
+    featured: false,
+    internal: true,
+  },
+  {
     title: "Digital Menu – Food Ordering",
     description:
       "A web-based food ordering and tracking management system built with core web technologies for seamless ordering experience.",
@@ -71,14 +80,21 @@ const ProjectsSection = () => {
                         Featured
                       </span>
                     )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Github size={18} />
-                    </a>
+                    {project.internal && (
+                      <span className="text-[10px] font-mono-code uppercase tracking-widest text-accent bg-accent/10 px-2 py-0.5 rounded-full">
+                        Private
+                      </span>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Github size={18} />
+                      </a>
+                    )}
                   </div>
                 </div>
 

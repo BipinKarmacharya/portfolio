@@ -3,6 +3,15 @@ import { Briefcase, Trophy, ArrowUpRight } from "lucide-react";
 const experiences = [
   {
     icon: Briefcase,
+    title: "Java Developer Intern",
+    company: "Oncore Software Solutions",
+    date: "2024 – Present",
+    description:
+      "Developing and maintaining microservices using Java and Spring Boot. Pushing code to GitHub and managing CI/CD pipeline via Jenkins. Testing APIs using Bruno and monitoring application logs via Google Cloud Console. Working with Google Cloud Spanner as the primary database. Participating in daily Agile/Scrum standups and managing access/permissions through Saviynt.",
+    highlight: "Microservices Development",
+  },
+  {
+    icon: Briefcase,
     title: "Web Development Instructor",
     company: "Lumbini Engineering College",
     date: "September 2024",

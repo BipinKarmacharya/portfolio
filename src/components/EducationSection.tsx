@@ -5,8 +5,8 @@ const education = [
     degree: "BE Computer Engineering",
     institution: "Lumbini Engineering College",
     university: "Pokhara University",
-    period: "2022 – 2025",
-    status: "Awaiting Final Result",
+    period: "2022 – 2026",
+    status: "Graduated",
     icon: GraduationCap,
     highlights: [
       "Software Engineering",

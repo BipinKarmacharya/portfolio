@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, Linkedin, MapPin, Send } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, MapPin, Send, Download } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -27,6 +27,21 @@ const ContactSection = () => {
             </div>
 
             <div className="space-y-3 mb-8">
+              <a
+                href="/resume.pdf"
+                download="Bipin_Karmacharya_Resume.pdf"
+                className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border hover:border-primary/40 transition-all group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Download size={18} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground mb-0.5">Resume</p>
+                  <span className="text-sm text-foreground group-hover:text-primary transition-colors">
+                    Download PDF
+                  </span>
+                </div>
+              </a>
               <a
                 href="mailto:bipinka01@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-xl bg-background border border-border hover:border-primary/40 transition-all group"
@@ -68,7 +83,7 @@ const ContactSection = () => {
 
             <div className="flex items-center justify-center gap-3">
               <a
-                href="https://github.com/bipin-karmacharya"
+                href="https://github.com/BipinKarmacharya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-xl border border-border bg-background flex items-center justify-center hover:border-primary/50 hover:text-primary hover:scale-105 transition-all"
@@ -76,7 +91,7 @@ const ContactSection = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/bipin-karmacharya"
+                href="https://www.linkedin.com/in/bipin-karmacharya/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-xl border border-border bg-background flex items-center justify-center hover:border-primary/50 hover:text-primary hover:scale-105 transition-all"
